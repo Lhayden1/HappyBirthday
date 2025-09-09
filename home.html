@@ -1,0 +1,220 @@
+<!--Latiesha Hayden-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Digitial birthday gifts">
+        <meta name="keywords" content="birthday, gift, Self Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700...800&display=swap" rel="stylesheet">
+        
+        
+        <link rel="stylesheet" type="text/CSS" href="CSS/main.css">
+        <link rel="stylesheet" type="text/CSS" href="CSS/normalize.css">
+        <title>Ben and Latiesha's Digitial Library</title>
+    </head>
+
+    <body class="homeBody">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="letter.html">LETTER</a></li>
+                <li><a href="Playlist.html">PLAYLIST</a></li>
+                <li><a href="Polaroid.html">POLAROID</a></li>
+            </ul>
+        </nav>
+
+        <section class="firstSection">
+            <div class="OpeningText">
+                <div class="homeTitle">
+                    BEN & LATIESHA'S DIGITIAL LIBRARY
+                </div>
+                <div class="homeDisc">
+                    <p>
+                        A collection of our sweetest memories made with love for my stupendous boyfriend. 
+                        <br>
+                        <br>
+                        Love Latiesha ♥
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="PolaroidSelfie">
+                <img src="images/selfie.png" alt="Photo of man at bar" style="width:100%">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <!-- Thumbnail images -->
+            <div class="leftOptions">
+                <div class="iconColumn">
+                    <div class="iconTitle">Cute Polaroids</div>
+                    <a href="Polaroid.html">
+                        <img 
+                            class="icon cursor" 
+                            src="images/polaroids.png" 
+                            style="width:100%" 
+                            onmouseover="currentSprites(2)" 
+                            onmouseout="currentSprites(1)" 
+                            onmouseenter="this.src='images/polaroidsOpen.png';" 
+                            onmouseleave="this.src='images/polaroids.png';"
+                            alt="Pictures of happy couple" 
+                            id="polaroids"
+                        >
+                    </a>
+                    
+                </div>
+                <div class="iconColumn">
+                    <a href="bDayVideo.html">
+                        <img 
+                            class="icon cursor" 
+                            src="images/tape.png" 
+                            style="width:55%" 
+                            onmouseover="currentSprites(3)"
+                            onmouseout="currentSprites(1)" 
+                            onmouseenter="this.src='images/tapeOpen.png';" 
+                            onmouseleave="this.src='images/tape.png';"
+                            alt="VHS tape" 
+                            id="VHS"
+                        >
+                    </a>
+                    
+                    <div class="iconTitle">Surprise Video</div>
+                </div>
+            </div>
+
+            <!-- Container(Latiesha) for the image gallery -->
+            <div class="Latiesha">
+                <!-- Full-width images with number text -->
+                <div class="mySprites">
+                    <img 
+                        src="images/MeStill.png" 
+                        onclick="this.src='images/meNoArms.png';" 
+                        onmouseout="this.src='images/MeStill.png';" 
+                        style="width:100%" 
+                        id="me"
+                    >
+                </div>
+
+                <div class="mySprites">
+                    <img 
+                        src="images/meLeftUp.png" 
+                        style="width:100%" 
+                        id="me"
+                    >
+                </div>
+
+                <div class="mySprites">
+                    <img 
+                        src="images/meLeftDown.png" 
+                        style="width:100%" 
+                        id="me"
+                    >
+                </div>
+
+                <div class="mySprites">
+                    <img 
+                        src="images/meRightUp.png" 
+                        style="width:100%" 
+                        id="me"
+                    >
+                </div>
+
+                <div class="mySprites">
+                    <img 
+                        src="images/meRightDown.png" 
+                        style="width:100%" 
+                        id="me"
+                    >
+                </div>
+            </div>
+
+            <div class="rightOptions">
+                <div class="iconColumn">
+                    <div class="iconTitle">Our Favorite Songs</div>
+                    <a href="Playlist.html">
+                       <img 
+                            class="icon cursor" 
+                            src="images/pocket.png" 
+                            style="width:45%"
+                            onmouseover="currentSprites(4)" 
+                            onmouseout="currentSprites(1)" 
+                            onmouseenter="this.src='images/pocketOpen.png';" 
+                            onmouseleave="this.src='images/pocket.png';" 
+                            alt="Jean pocket with MP3" 
+                            id="pocket"
+                        > 
+                    </a>
+                    
+                </div>
+                <div class="iconColumn">
+                    <a href="letter.html">
+                        <img 
+                            class="icon cursor" 
+                            src="images/envolope.png" 
+                            style="width:55%" 
+                            onmouseover="currentSprites(5)"
+                            onmouseout="currentSprites(1)" 
+                            onmouseenter="this.src='images/envolopeOpen.png';" 
+                            onmouseleave="this.src='images/envolope.png';" 
+                            alt="A white envolope"
+                            id="envolope"
+                        >
+                    </a>
+                    
+                    <div class="iconTitle">A Letter From Me!</div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let spriteIndex = 1;
+            showSprites(spriteIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSprites(spriteIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSprites(n) {
+                showSprites(spriteIndex = n);
+            }
+
+            function showSprites(n) {
+                let i;
+                let sprites = document.getElementsByClassName("mySprites");
+                let icons = document.getElementsByClassName("icon");
+                if (n > sprites.length) {spriteIndex = 1}
+                if (n < 1) {spriteIndex = sprites.length}
+                for (i = 0; i < sprites.length; i++) {
+                    sprites[i].style.display = "none";
+                }
+                for (i = 0; i < icons.length; i++) {
+                    icons[i].className = icons[i].className.replace(" active", "");
+                }
+                sprites[spriteIndex-1].style.display = "block";
+                icons[spriteIndex-1].className += " active";
+            }
+        </script>
+    </body>
+
+    <footer class="foot">
+        <nav class="footNavbar">
+            <ul class="FootMenu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="letter.html">LETTER</a></li>
+                <li><a href="Playlist.html">PLAYLIST</a></li>
+                <li><a href="Polaroid.html">POLAROID</a></li>
+            </ul>
+        </nav>
+
+        <p class="footCopy">
+            &copy; Copyright 2021. Latiesha Hayden
+        </p>
+    </footer>
+</html>

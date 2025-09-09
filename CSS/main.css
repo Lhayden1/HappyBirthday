@@ -1,0 +1,443 @@
+/*Latiesha's project for Ben's birthday*/
+
+
+
+/*Includes: Background, navigation bar*/
+    /*BACKGROUND*/
+        body{
+            margin: 0;
+        }
+
+        .homeBody, .playlistBody{
+            background-image: url("C:\\HappyBirthday\\images\\tealStar_Bg.jpg");
+            background-repeat: repeat;
+            scroll-behavior: smooth;
+        }
+
+        .polaroidsBody{
+            background-color: #D3EAE9;
+        }
+
+        .letterBody, .videoBody, .openLetterBody{
+            background-image: url("C:\\HappyBirthday\\images\\tealPaper_Bg.jpg");
+            background-repeat: repeat;
+            scroll-behavior: smooth;
+        }
+        /*.playlistBody{
+            background-image: url("C:\\HappyBirthday\\images\\tealStar_Bg.jpg");
+            background-repeat: repeat;
+            scroll-behavior: smooth;
+        }*/
+    /*BACKGROUND*/
+
+
+    /*ALL NAV*/
+        .navbar{
+            padding: 0px 50px 49px;
+            background-color:#D3EAE9;
+        }
+
+        /*Includes: navigation bar's text*/
+        .menu{
+            display : flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            float: right;
+        }
+
+        /*Includes: navigation bar's items*/
+        .navbar ul li {
+            padding: 0px 5px;
+        }
+
+        /*Includes: navigation bar's links*/
+        .navbar ul li a {
+            color : #004C4C;
+            text-decoration : none;
+            font-size: 1.1em;
+            padding : 1rem 0.2rem 0.85rem;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+
+        /*Includes: navigation bar's links when hovered over*/
+        .menu li a:hover{
+            color: #D3EAE9;
+            background-color: #004c4c;
+        }
+    /*ALL NAV*/
+/*Includes: Background, navigation bar*/    
+
+
+
+/*Contains home body*/
+
+    /*ALL HOME FIRSTSEC*/
+        .firstSection{
+            margin:0%;
+            padding: 0%;
+            background-image: url("C:\\HappyBirthday\\images\\sec1_Bg.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 540px;/*You must set a specified height*/
+            width: 100%;
+            padding: 25px;
+        }
+        .PolaroidSelfie{
+            float: left;
+            width: 40%;
+        }
+
+        .OpeningText{
+            float: right;
+            width: 60%;
+        }
+
+        .homeTitle{
+            color : #D3EAE9;
+            text-decoration : none;
+            font-size: 3em;
+            padding: 2rem 8rem 1rem 5rem;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .homeDisc{
+            color : #D3EAE9;
+            text-decoration : none;
+            font-size: 1.2em;
+            padding: 1rem 8rem 2rem 5rem;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+    /*ALL HOME FIRSTSEC*/
+
+    /*ALL HOME SECONDSEC*/
+        .iconTitle{
+            color : #D3EAE9;
+            text-decoration : none;
+            font-size: 1.5em;
+            padding: 2rem 0rem 2rem 4rem;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .leftOptions{
+            float: left;
+            width: 33%;
+        }
+
+        .Latiesha{
+            float: left;
+            width: 33%;
+        }
+
+        .rightOptions{
+            float: left;
+            width: 33%;
+        }
+
+        #polaroids{
+            padding: 0px 0px 50px;
+        }
+
+        #polaroids:hover{
+            rotate: -35deg;
+        }
+
+        #VHS {
+            padding: 40px 0px 0px 70px;
+        }
+
+        #VHS:hover{
+            rotate: -25deg;
+        }
+
+        #pocket{
+            padding: 40px 0px 0px 85px;
+        }
+
+        #pocket:hover{
+            rotate: -25deg;
+        }
+
+        #envolope {
+            padding: 80px 80px 0px 70px;
+        }
+
+        #envolope:hover{
+            rotate: -35deg;
+        }
+        /*ALL HOME SLIDESHOW*/
+
+            /* Hide the images by default */
+            .mySprites {
+                display: none;
+            }
+
+            /* Add a pointer when hovering over the thumbnail images */
+            .cursor {
+                cursor: pointer;
+            }
+
+            /* Add a transparency effect for thumnbail images */
+            .iconColumn {
+                opacity: 0.6;
+            }
+
+            .active,
+            .iconColumn:hover {
+                opacity: 1;
+            }
+        /*ALL HOME SLIDESHOW*/
+    /*ALL HOME SECONDSEC*/
+/*Contains home body*/
+
+
+
+/*polaroid*/
+    /*Contains polaroid body*/
+
+        /*ALL POLAROID FIRSTSEC*/
+            .polaroidsFirstSection{
+                margin:0%;
+                padding: 0%;
+                background-image: url("C:\\HappyBirthday\\images\\polaroids_Bg.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                height: 540px;/*You must set a specified height*/
+                width: 100%;
+                padding: 25px;
+            }
+
+            .polaroidsOpeningText{
+                padding: 40px;
+            }
+
+            .polaroidsTitle{
+                padding-top: 100px;
+                width: 80%;
+                margin: auto;
+            }
+        /*ALL POLAROID FIRSTSEC*/
+        
+        /*ALL POLAROID SECONDSEC*/
+            .jeanStars1{
+                float: left;
+                width: 10%;
+                padding: 25px;
+            }
+
+            .jeanStars2{
+                float: left;
+                width: 11%;
+                padding: 25px;
+            }
+
+            .polaroidsDesc{
+                float: left;
+                width: 40%;
+                color : #004c4c;
+                text-decoration : none;
+                font-size: 1.5em;
+                padding: 5rem 12rem;
+                text-align: center;
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+            }
+        /*ALL POLAROID SECONDSEC*/
+
+        /*ALL POLAROID THIRDSEC*/
+            .polaroidsSlide {
+                width: 100%;
+                background-color: #D3EAE9;
+                white-space: nowrap;
+                overflow: auto;
+                padding: 10px;
+            }
+
+            .polaroidsSlide img {
+                width: 305px;
+                padding: 10px;
+            }
+        /*ALL POLAROID THIRDSEC*/
+    /*Contains polaroid body*/
+/*polaroid*/
+
+
+
+/*playlist*/
+    /*Contains playlist body*/
+        /*ALL PLAYLIST FIRSTSEC*/
+            .playlistLeftSection{
+                float: left;
+                width: 50%;
+            }
+
+            .playlistRightSection{
+                float: right;
+                width: 50%;
+            }
+
+            .vinyl{
+                margin: 0%;
+            }
+
+            .playlistText{
+                color : #ffffff;
+                text-decoration : none;
+                font-size: 2.5em;
+                text-align: center;
+                font-family: "Plus Jakarta Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            .playlistText i{
+                padding: 0px 40px;
+            }
+
+            .playlistText i:hover {
+                color: lightgray;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+            /* unvisited link */
+            .playlistText a:link {
+                color: white;
+                text-decoration: none;
+            }
+
+            /* visited link */
+            .playlistText a:visited {
+                color: whitesmoke;
+                text-decoration: none;
+            }
+
+            /* mouse over link */
+            .playlistText a:hover {
+                color: lightgray;
+                text-decoration: none;
+            }
+
+            /* selected link */
+            .playlistText a:active {
+                color: lightgray;
+                text-decoration: none;
+            }
+
+            .playlistTitle{
+                padding: 0px 40px;
+            }
+
+            #postIt{
+                float: left;
+                width: 33%;
+                padding: 0px 0px 35px 0px;
+            }
+
+            .postIts img:hover{
+                rotate: 25deg;
+            }
+        /*ALL PLAYLIST FIRSTSEC*/
+    /*Contains playlist body*/
+/*playlist*/
+
+/*letter*/
+    .closedLetter{
+        padding: 50px;
+        width: 40%;
+        margin: auto;
+    }
+/*letter*/
+
+/*Contains Footer*/
+
+    /*FOOTER NAV*/
+
+        .footNavbar{
+            padding: 0px 0px 40px;
+            background-color:#D3EAE9;
+        }
+
+        /*Includes: navigation bar's text*/
+        .FootMenu{
+            display : flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            float: right;
+        }
+
+        /*Includes: navigation bar's items*/
+        .footNavbar ul li {
+            padding: 0px 5px;
+        }
+
+        /*Includes: navigation bar's links*/
+        .footNavbar ul li a {
+            color : #004C4C;
+            text-decoration : none;
+            font-size: 1.1em;
+            padding : 1rem 0.2rem 0.85rem;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+
+        /*Includes: navigation bar's links when hovered over*/
+        .FootMenu li a:hover{
+            color: #D3EAE9;
+            background-color: #004c4c;
+        }
+    /*FOOTER NAV*/
+
+    /*FOOTER*/
+        .foot{
+            background: linear-gradient(#D3EAE9,#D3EAE9, #328b9700);
+        }
+
+        footer{
+            clear : both;
+        }
+
+        footer p{
+            font-size : .75em;
+            padding: 5px 40px;
+            color : #D3EAE9;
+            text-decoration : none;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal; 
+        }
+
+        #darkfooter {
+            color : #004C4C;
+        }
+
+        footer nav ul li{
+            font-size : .85em;
+        }
+    /*FOOTER*/
+/*Contains Footer*/
+
+
+
