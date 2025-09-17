@@ -9,7 +9,7 @@
         }
 
         .homeBody, .playlistBody{
-            background-image: url(".../HappyBirthday/images/tealStar_Bg.jpg");
+            background-image: url("C:/HappyBirthday/images/tealStar_Bg.jpg");
             background-repeat: repeat;
             scroll-behavior: smooth;
         }
