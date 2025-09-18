@@ -19,12 +19,12 @@
         }
 
         .letterBody, .videoBody, .openLetterBody{
-            background-image: url("C:\\HappyBirthday\\images\\tealPaper_Bg.jpg");
+            background-image: url("../images/tealPaper_Bg.jpg");
             background-repeat: repeat;
             scroll-behavior: smooth;
         }
         /*.playlistBody{
-            background-image: url("C:\\HappyBirthday\\images\\tealStar_Bg.jpg");
+            background-image: url("../images/tealStar_Bg.jpg");
             background-repeat: repeat;
             scroll-behavior: smooth;
         }*/
@@ -79,7 +79,7 @@
         .firstSection{
             margin:0%;
             padding: 0%;
-            background-image: url("C:\\HappyBirthday\\images\\sec1_Bg.png");
+            background-image: url("../images/sec1_Bg.png");
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -212,7 +212,7 @@
             .polaroidsFirstSection{
                 margin:0%;
                 padding: 0%;
-                background-image: url("C:\\HappyBirthday\\images\\polaroids_Bg.png");
+                background-image: url("../images/polaroids_Bg.png");
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
